@@ -1,5 +1,8 @@
 import IndexView from '../view/index';
 import TopicView from '../view/topic';
+import APIView from '../view/api';
+import AboutView from '../view/about';
+import GetstartView from '../view/getstart';
 import UndefiendView from '../view/404';
 
 const routes = [
@@ -10,14 +13,32 @@ const routes = [
       return <IndexView {...props} />
     }
   }, {
-    path: "/TopicView",
+    path: "/topic/:id",
     exact: true,
     render(props) {
       return <TopicView {...props} />
     }
   }, {
-    path: "/UndefiendView",
+    path: "/getstart",
     exact: true,
+    render(props) {
+      return <GetstartView {...props} />
+    }
+  }, {
+    path: "/api",
+    exact: true,
+    render(props) {
+      return <APIView {...props} />
+    }
+  }, {
+    path: "/about",
+    exact: true,
+    render(props) {
+      return <AboutView {...props} />
+    }
+  },{
+    path: "",
+    exact: false,
     render(props) {
       return <UndefiendView {...props} />
     }

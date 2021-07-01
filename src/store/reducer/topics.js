@@ -1,14 +1,14 @@
-function topic(topics = {
+function topics(topics = {
   loading: true,
-  data:{}
+  data:[]
 }, action) {
   switch (action.type) {
-    case "TOPIC_LOAD":
+    case "TOPICS_LOAD":
       return {
         loading: true,
-        data: {}
-      };
-    case "TOPIC_GET":
+        data:[]
+      }
+    case "TOPICS_GET":
       return {
         loading: false,
         data: action.data
@@ -18,4 +18,4 @@ function topic(topics = {
   return topics;
 }
 
-export default topic;
+export default topics;

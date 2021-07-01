@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import { indexNavs } from '../../router';
 import Nav from '../../component/nav';
 import qs from 'qs';
+import IndexList from './list';
 
 function IndexView() {
   return <Fragment>
@@ -22,6 +23,7 @@ function IndexView() {
         return key + "";
       }}
     />
+    <IndexList/>
   </Fragment>
 }
 

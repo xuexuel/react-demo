@@ -9,7 +9,7 @@ function Header() {
     <div className="wrap">
       <Row>
         <Col span={4}>
-          <h1 id="logo"><Link to="/">开课吧-CNode</Link></h1>
+          <h1 id="logo"><Link to="/">CNode</Link></h1>
         </Col>
         <Col span={20}>
           <Nav
