@@ -4,4 +4,4 @@ import topic from './reducer/topic';
 
 const store = createStore(combineReducers({topics,topic}));
 
-export default store;
+export default store; 
